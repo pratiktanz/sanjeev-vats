@@ -1597,17 +1597,12 @@ const CALENDLY_URL='https://calendly.com/sanjeevvatsfitness/30min';
 $('#gameBanner').addEventListener('click',e=>{
   if(matchMedia('(max-width:760px)').matches){e.preventDefault();document.getElementById('game').scrollIntoView({behavior:reduce?'auto':'smooth'});setTimeout(()=>window.repRushStart&&window.repRushStart(),reduce?0:450)}
 });
-/* ---------- ambient sound: starts on load (or on first tap if the browser blocks autoplay) ---------- */
+/* ---------- ambient sound: off by default, plays only when the visitor turns it on ---------- */
 (function(){
-  const b=$('#sound'),a=$('#amb'),lbl=$('#soundLbl');a.volume=.3;a.preload='auto';
-  let off=false;try{off=localStorage.getItem('svSoundOff')==='1'}catch(e){}
+  const b=$('#sound'),a=$('#amb'),lbl=$('#soundLbl');a.volume=.3;
   const show=on=>{b.setAttribute('aria-pressed',on);lbl.textContent=on?'Sound on':'Sound off';b.setAttribute('aria-label',on?'Turn gym sound off':'Turn gym sound on')};
-  const play=()=>a.play().then(()=>show(true)).catch(()=>show(false));
-  const evs=['pointerdown','keydown','touchstart'];
-  function firstGesture(e){evs.forEach(ev=>document.removeEventListener(ev,firstGesture,true));if(off||e.target.closest('#sound'))return;play()}
-  if(!off){play().then(()=>{if(a.paused)evs.forEach(ev=>document.addEventListener(ev,firstGesture,true))});}
-  b.onclick=()=>{const on=b.getAttribute('aria-pressed')!=='true';off=!on;try{localStorage.setItem('svSoundOff',off?'1':'0')}catch(e){}
-    if(on)play();else{a.pause();show(false)}};
+  show(false);
+  b.onclick=()=>{if(b.getAttribute('aria-pressed')!=='true')a.play().then(()=>show(true)).catch(()=>show(false));else{a.pause();show(false)}};
 })();
 
 /* ---------- copy buttons ---------- */
