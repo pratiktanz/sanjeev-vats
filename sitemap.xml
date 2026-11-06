@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.sanjeevvats.com/</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.sanjeevvats.com/assets/og-image-v2.jpg</image:loc>
+      <image:title>Sanjeev Vats Personal Training Mumbai and Online</image:title>
+      <image:caption>Certified personal trainer offering one-on-one training across Mumbai and live online coaching globally.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.sanjeevvats.com/assets/logo-full-v2.png</image:loc>
+      <image:title>Sanjeev Vats Fitness Official Logo</image:title>
+      <image:caption>Sanjeev Vats personal training brand logo.</image:caption>
+    </image:image>
+  </url>
+</urlset>
+

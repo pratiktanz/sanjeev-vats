@@ -4,29 +4,38 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0a0a0b">
+<meta name="google-site-verification" content="2B3ZYI0RKrYmDkMBw-8euQJOxrlFyS9v0rgrZ-KJGnw">
+<link rel="canonical" href="https://www.sanjeevvats.com/">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/icon-v2.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon-v2.png">
 <title>Personal Trainer in Mumbai &amp; Online | Sanjeev Vats</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Sanjeev Vats is a certified personal trainer in Mumbai. One-on-one training at your home or your gym anywhere in Mumbai, plus live online sessions for clients anywhere in the world. Weight loss, strength, MMA and more.">
 <meta name="keywords" content="personal trainer Mumbai, home personal trainer Mumbai, online personal trainer, online personal training, online fitness coach for international clients, fitness trainer Mumbai, MMA trainer Mumbai, ACE certified trainer Mumbai">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="Sanjeev Vats">
 <meta name="geo.region" content="IN-MH">
 <meta name="geo.placename" content="Mumbai">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_IN">
 <meta property="og:site_name" content="Sanjeev Vats Personal Training">
+<meta property="og:url" content="https://www.sanjeevvats.com/">
 <meta property="og:title" content="Personal Trainer in Mumbai &amp; Online | Sanjeev Vats">
 <meta property="og:description" content="One-on-one training at your home or your gym anywhere in Mumbai, or live online from anywhere in the world. ACE certified, state-level MMA, Master of Physical Education.">
-<meta property="og:image" content="assets/og-image-v2.jpg">
+<meta property="og:image" content="https://www.sanjeevvats.com/assets/og-image-v2.jpg">
+<meta property="og:image:secure_url" content="https://www.sanjeevvats.com/assets/og-image-v2.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sanjeev Vats - Certified Personal Trainer in Mumbai and Online Coach">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://www.sanjeevvats.com/">
 <meta name="twitter:title" content="Personal Trainer in Mumbai &amp; Online | Sanjeev Vats">
 <meta name="twitter:description" content="One-on-one training at your home or your gym anywhere in Mumbai, or live online from anywhere in the world.">
-<meta name="twitter:image" content="assets/og-image-v2.jpg">
+<meta name="twitter:image" content="https://www.sanjeevvats.com/assets/og-image-v2.jpg">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":["LocalBusiness","HealthAndBeautyBusiness"],"@id":"#business","name":"Sanjeev Vats Personal Training","description":"Certified personal trainer offering one-on-one training at the client's home or gym anywhere in Mumbai, and live online sessions for clients anywhere in the world.","image":"assets/og-image-v2.jpg","logo":"assets/logo-full-v2.png","telephone":"+91-98200-78942","email":"sanjeevvatsfitness@gmail.com","priceRange":"₹₹₹",
+ {"@type":["LocalBusiness","HealthAndBeautyBusiness"],"@id":"#business","name":"Sanjeev Vats Personal Training","url":"https://www.sanjeevvats.com/","description":"Certified personal trainer offering one-on-one training at the client's home or gym anywhere in Mumbai, and live online sessions for clients anywhere in the world.","image":"https://www.sanjeevvats.com/assets/og-image-v2.jpg","logo":"https://www.sanjeevvats.com/assets/logo-full-v2.png","telephone":"+91-98200-78942","email":"sanjeevvatsfitness@gmail.com","priceRange":"₹₹₹",
   "address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressRegion":"Maharashtra","addressCountry":"IN"},
   "areaServed":[{"@type":"City","name":"Mumbai"}],
   "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"06:00","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"06:00","closes":"20:00"}],
@@ -238,16 +247,83 @@ section{position:relative;z-index:1}
 @media (max-width:860px){.coach-grid{grid-template-columns:1fr}.coach-visual{max-width:400px}}
 @media (max-width:440px){.cred-grid{grid-template-columns:1fr}.cred{min-height:0}.coach-visual{width:86%}}
 
-/* stat tiles + sliders (calculator, game) */
+/* RESULTS — transformation lens */
+.res-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:clamp(32px,4vw,56px)}
+.res-head .lede{max-width:44ch}
+.res-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,56px);align-items:start}
+.stage-wrap{position:relative}
+.stage{position:relative;aspect-ratio:4/5;width:100%;border-radius:28px;overflow:hidden;background:#111;touch-action:none;cursor:none;user-select:none;-webkit-user-select:none;
+  box-shadow:0 0 0 1px var(--line),0 40px 100px -30px rgba(0,0,0,.85)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none}
+.stage .before{filter:saturate(.75) brightness(.92)}
+.stage .after-scan{clip-path:inset(0 0 100% 0)}
+.stage.mode-lens .after-scan,.stage.mode-lens .scanline{display:none}
+.stage.mode-scan .lens{display:none}
+.lens{position:absolute;left:0;top:0;width:var(--d,220px);height:var(--d,220px);border-radius:50%;overflow:hidden;will-change:transform;pointer-events:none;
+  box-shadow:0 0 0 1.5px rgba(241,243,246,.85),0 0 0 7px rgba(255,255,255,.06),0 25px 60px -10px rgba(0,0,0,.75),0 0 40px rgba(195,200,207,.35)}
+.lens img{position:absolute;max-width:none;object-fit:cover;transform-origin:0 0}
+.lens::before{content:"";position:absolute;inset:0;border-radius:50%;z-index:2;pointer-events:none;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.35),inset 0 14px 28px rgba(255,255,255,.22),inset 0 -18px 34px rgba(0,0,0,.45),inset 0 0 22px 6px rgba(120,190,255,.10)}
+.lens::after{content:"";position:absolute;left:18%;top:9%;width:42%;height:22%;border-radius:50%;z-index:3;
+  background:radial-gradient(closest-side,rgba(255,255,255,.55),rgba(255,255,255,0));filter:blur(2px);transform:rotate(-22deg)}
+.lens-label{position:absolute;left:0;top:0;pointer-events:none;font-family:var(--f-wide);font-size:9px;letter-spacing:.3em;padding:6px 10px;border-radius:999px;background:rgba(10,10,11,.7);color:var(--steel-hi);border:1px solid rgba(241,243,246,.4);will-change:transform;white-space:nowrap}
+.stage.mode-scan .lens-label{display:none}
+.scanline{position:absolute;left:0;right:0;top:0;height:2px;background:var(--steel-hi);box-shadow:0 0 18px 3px rgba(241,243,246,.8),0 0 60px 10px rgba(195,200,207,.35);pointer-events:none}
+.scanline::before{content:"";position:absolute;left:0;right:0;bottom:2px;height:70px;background:linear-gradient(transparent,rgba(241,243,246,.16))}
+.scanline .knob{position:absolute;left:50%;top:1px;transform:translate(-50%,-50%);display:flex;align-items:center;gap:8px;padding:9px 16px 9px 12px;border-radius:999px;
+  background:linear-gradient(135deg,var(--steel-hi),var(--steel));color:#101114;font-family:var(--f-wide);font-size:10px;letter-spacing:.2em;font-weight:700;box-shadow:0 0 0 4px rgba(10,10,11,.55),0 10px 30px rgba(0,0,0,.6);white-space:nowrap}
+.scanline .knob svg{width:18px;height:18px}
+.stage.mode-scan.dragging .knob{transform:translate(-50%,-50%) scale(1.08)}
+.scanline span{position:absolute;right:14px;top:12px;font-family:var(--f-wide);font-size:10px;letter-spacing:.25em;color:var(--ink);background:var(--steel-hi);padding:5px 9px;border-radius:999px;font-variant-numeric:tabular-nums}
+.stage-tag{position:absolute;top:16px;padding:7px 12px;border-radius:999px;font-family:var(--f-wide);font-size:9.5px;letter-spacing:.28em;pointer-events:none;color:var(--bone);background:rgba(10,10,11,.55);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.1)}
+.stage-tag.l{left:16px}.stage-tag.r{right:16px;color:var(--steel-hi)}
+.stage.mode-lens .stage-tag.r{display:none}
+.stage-help{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);font-size:12px;font-weight:600;color:var(--bone);padding:8px 14px;border-radius:999px;background:rgba(10,10,11,.6);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);pointer-events:none;white-space:nowrap;transition:opacity .4s}
+.demo-note{margin-top:12px;font-size:12px;color:var(--smoke)}
+
+.res-panel{display:flex;flex-direction:column;gap:22px;min-width:0}
+.modes{display:inline-flex;padding:5px;border-radius:999px;gap:4px;align-self:flex-start}
+.modes button{border:0;background:transparent;padding:10px 18px;border-radius:999px;font-weight:700;font-size:14px;cursor:pointer;color:var(--smoke);display:flex;align-items:center;gap:8px;transition:color .2s,background .3s}
+.modes button svg{width:16px;height:16px}
+.modes button[aria-pressed="true"]{background:var(--steel);color:#101114}
+.client-card{border-radius:24px;padding:clamp(20px,2.4vw,30px);display:flex;flex-direction:column;gap:18px}
+.client-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.client-name{font-family:var(--f-display);font-weight:900;text-transform:uppercase;font-size:clamp(34px,3.4vw,48px);line-height:.9;margin:0}
+.client-prog{font-size:13px;font-weight:600;color:var(--steel);margin-top:6px}
+.weeks{text-align:right}
+.weeks b{display:block;font-family:var(--f-display);font-weight:900;font-size:44px;line-height:.85;color:var(--steel);font-variant-numeric:tabular-nums}
+.weeks span{font-family:var(--f-wide);font-size:9px;letter-spacing:.28em;color:var(--smoke)}
+.quote{margin:0;font-size:17px;line-height:1.55;color:var(--bone);font-weight:500;max-width:48ch}
+.quote::before{content:"\201C";color:var(--steel);font-family:var(--f-display);font-size:40px;line-height:0;vertical-align:-14px;margin-right:4px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .stat{border-radius:16px;padding:14px;background:rgba(225,232,245,.04);border:1px solid var(--line);min-width:0}
 .stat .k{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--smoke)}
 .stat .v{font-family:var(--f-display);font-weight:800;font-size:clamp(24px,2.3vw,32px);line-height:1.05;font-variant-numeric:tabular-nums;white-space:nowrap}
 .stat .v small{font-size:.55em;color:var(--smoke);font-weight:600;margin-left:2px}
+.stat .d{font-size:12px;font-weight:700;color:var(--steel)}
+.scan-ctl{display:flex;align-items:center;gap:14px}
+.scan-ctl[hidden]{display:none!important}
+.play{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--glass);display:grid;place-items:center;cursor:pointer;flex:none}
+.play svg{width:18px;height:18px;fill:var(--steel)}
 .range{flex:1;min-width:0;-webkit-appearance:none;appearance:none;height:30px;background:transparent;cursor:pointer}
 .range::-webkit-slider-runnable-track{height:4px;border-radius:4px;background:linear-gradient(90deg,var(--steel) var(--p,0%),rgba(214,220,230,.16) var(--p,0%))}
 .range::-moz-range-track{height:4px;border-radius:4px;background:linear-gradient(90deg,var(--steel) var(--p,0%),rgba(214,220,230,.16) var(--p,0%))}
 .range::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;margin-top:-11px;border-radius:7px;background:linear-gradient(var(--steel-hi),var(--steel));border:3px solid var(--ink);box-shadow:0 0 0 1px var(--steel),0 0 18px rgba(195,200,207,.6)}
 .range::-moz-range-thumb{width:20px;height:20px;border-radius:7px;background:linear-gradient(var(--steel-hi),var(--steel));border:3px solid var(--ink);box-shadow:0 0 0 1px var(--steel)}
+.lens-size{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--smoke);font-weight:600}
+.lens-size[hidden]{display:none!important}
+.lens-size button{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--glass);cursor:pointer;font-size:18px;font-weight:700;display:grid;place-items:center}
+.lens-size button:hover{border-color:var(--steel)}
+.thumbs{display:flex;gap:10px;overflow-x:auto;padding:4px 2px 10px;scrollbar-width:thin;scrollbar-color:rgba(195,200,207,.45) transparent;scroll-snap-type:x mandatory}
+.thumb{flex:none;scroll-snap-align:start;width:128px;border:0;padding:0;background:none;cursor:pointer;display:flex;flex-direction:column;gap:6px;align-items:stretch;text-align:left}
+.thumb .im{position:relative;aspect-ratio:8/5;border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px var(--line);transition:box-shadow .3s,transform .3s;display:grid;grid-template-columns:1fr 1fr;gap:3px;background:var(--ink)}
+.thumb .im img{width:100%;height:100%;object-fit:cover;min-width:0}
+.thumb .im img:first-child{filter:saturate(.75) brightness(.9)}
+.thumb span{font-size:11.5px;font-weight:700;color:var(--smoke)}
+.thumb[aria-pressed="true"] .im{box-shadow:0 0 0 2px var(--steel),0 10px 30px -10px rgba(195,200,207,.6);transform:translateY(-3px)}
+.thumb[aria-pressed="true"] span{color:var(--steel)}
+@media (max-width:900px){.res-grid{grid-template-columns:1fr;max-width:600px;margin-inline:auto}}
+@media (max-width:440px){.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:1/-1}}
 
 /* PROGRAMS index */
 .prog-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,80px);align-items:start;margin-top:clamp(36px,5vw,64px)}
@@ -442,8 +518,9 @@ footer{position:relative;z-index:1;padding-block:44px 100px;border-top:1px solid
 .cur.big{width:70px;height:70px;margin:-35px 0 0 -35px;background:rgba(195,200,207,.12)}
 .cur.hide,.cur-dot.hide{opacity:0}
 .cur .cur-txt{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--f-wide);font-size:12px;font-weight:700;letter-spacing:.24em;color:var(--steel-hi);opacity:0;text-shadow:0 1px 8px rgba(0,0,0,.9)}
-.cur.wipe{width:118px;height:118px;margin:-59px 0 0 -59px;border:2px solid var(--steel-hi);background:rgba(10,10,11,.35);box-shadow:0 0 0 6px rgba(241,243,246,.14),0 0 30px rgba(195,200,207,.35)}
-.cur.wipe .cur-txt{opacity:1}
+.cur.wipe,.cur.drag{width:118px;height:118px;margin:-59px 0 0 -59px;border:2px solid var(--steel-hi);background:rgba(10,10,11,.35);box-shadow:0 0 0 6px rgba(241,243,246,.14),0 0 30px rgba(195,200,207,.35)}
+.cur.drag{width:92px;height:92px;margin:-46px 0 0 -46px;background:rgba(10,10,11,.55)}
+.cur.wipe .cur-txt,.cur.drag .cur-txt{opacity:1}
 
 
 /* MUSCLE MAP */
@@ -646,6 +723,7 @@ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduc
       <span>SANJEEV VATS</span>
     </a>
     <ul class="nav-links">
+      <li><a href="#results">Results</a></li>
       <li><a href="#programs">Programs</a></li>
       <li><a href="#train">Online</a></li>
       <li><a href="#muscles">Muscle map</a></li>
@@ -670,7 +748,7 @@ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduc
         <a class="btn btn-steel" href="https://wa.me/919820078942?text=Hi%20Sanjeev%2C%20I%27d%20like%20to%20book%20a%20trial%20session." target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.4-.2Z"/></svg>
           Book a trial on WhatsApp</a>
-        <a class="btn btn-ghost" href="#programs">See programs</a>
+        <a class="btn btn-ghost" href="#results">See transformations</a>
       </div>
       <ul class="creds">
         <li class="glass"><i></i>State-level MMA player</li>
@@ -756,6 +834,65 @@ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduc
         <div><b data-count="9">9</b><span>disciplines</span></div>
         <div><b data-count="2">2</b><span>degrees in P.E.</span></div>
         <div><b>1:1</b><span>every session</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS -->
+<section class="sec" id="results">
+  <div class="wrap">
+    <div class="res-head">
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div class="eyebrow rv">The transformation lens</div>
+        <h2 class="h-lg rv">Look <span class="outline">closer.</span></h2>
+      </div>
+      <p class="lede rv">Drag the silver scan line down each client's photo to run their weeks forward. Switch to Lens to move a glass magnifier over the starting photo and see the result underneath.</p>
+    </div>
+
+    <div class="res-grid">
+      <div class="stage-wrap rv">
+        <div class="stage mode-scan" id="stage" aria-label="Before and after comparison. Drag the silver line to scan from before to after.">
+          <img class="before" id="imgBefore" src="assets/tf2b.webp" alt="Before">
+          <img class="after-scan" id="imgAfterScan" src="assets/tf2a.webp" alt="After">
+          <div class="lens" id="lens"><img id="imgAfterLens" src="assets/tf2a.webp" alt=""></div>
+          <div class="lens-label" id="lensLabel">AFTER</div>
+          <div class="scanline" id="scanline"><i class="knob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 9 5-5 5 5M7 15l5 5 5-5"/></svg>DRAG</i><span id="scanWeek">WEEK 0</span></div>
+          <div class="stage-tag l" id="tagL">WEEK 0</div>
+          <div class="stage-tag r" id="tagR">AFTER</div>
+          <div class="stage-help" id="stageHelp">Drag the silver line up or down</div>
+        </div>
+        <p class="demo-note">Sample transformations for this preview. Names and stories are placeholders.</p>
+      </div>
+
+      <div class="res-panel">
+        <div class="modes glass" role="group" aria-label="Comparison mode">
+          <button type="button" id="mScan" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M3 12h18"/></svg>Body scan</button>
+          <button type="button" id="mLens" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Lens</button>
+        </div>
+
+        <div class="client-card glass">
+          <div class="client-top">
+            <div>
+              <h3 class="client-name" id="cName">Rohan K.</h3>
+              <div class="client-prog" id="cProg">Body recomposition</div>
+            </div>
+            <div class="weeks"><b id="cWeeks">24</b><span>WEEKS</span></div>
+          </div>
+          <p class="quote" id="cQuote">Visible six-pack abs and shredded core. Sanjeev completely transformed my body composition.</p>
+          <div class="stats" id="cStats"></div>
+          <div class="scan-ctl" id="scanCtl">
+            <button class="play" id="scanPlay" type="button" aria-label="Play the scan"><svg viewBox="0 0 24 24" aria-hidden="true"><path id="playIcon" d="M7 4v16l13-8Z"/></svg></button>
+            <input class="range" id="scanRange" type="range" min="0" max="100" value="0" aria-label="Weeks into the program">
+          </div>
+          <div class="lens-size" id="lensSize" hidden>
+            <span>Lens size</span>
+            <button type="button" id="lensMinus" aria-label="Smaller lens">−</button>
+            <button type="button" id="lensPlus" aria-label="Bigger lens">+</button>
+          </div>
+        </div>
+
+        <div class="thumbs" id="thumbs" role="group" aria-label="Choose a client"></div>
       </div>
     </div>
   </div>
@@ -1053,7 +1190,7 @@ if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduc
 <footer>
   <div class="wrap foot">
     <img src="assets/logo-full-v2.webp" alt="Sanjeev Vats Personal Training logo" width="131" height="78" loading="lazy">
-    <nav aria-label="Footer"><a href="#coach">Coach</a><a href="#programs">Programs</a><a href="#train">Online training</a><a href="#muscles">Muscle map</a><a href="#book">Book</a><a href="#plan">Your plan</a><a href="#faq">FAQ</a><a href="#game">Rep Rush</a><a href="#contact">Contact</a></nav>
+    <nav aria-label="Footer"><a href="#coach">Coach</a><a href="#results">Results</a><a href="#programs">Programs</a><a href="#train">Online training</a><a href="#muscles">Muscle map</a><a href="#book">Book</a><a href="#plan">Your plan</a><a href="#faq">FAQ</a><a href="#game">Rep Rush</a><a href="#contact">Contact</a></nav>
     <p>© 2026 Sanjeev Vats · Personal trainer in Mumbai · Online worldwide</p>
   </div>
   <div class="wrap credit">
@@ -1117,16 +1254,17 @@ document.addEventListener('pointermove',e=>{
 },{passive:true});
 
 /* ---------- custom cursor ---------- */
-const cur=$('#cur'),dot=$('#curDot');
+const cur=$('#cur'),dot=$('#curDot'),curTxt=cur.querySelector('.cur-txt');
 if(fine && !reduce){
   root.classList.add('has-cursor');
   let mx=innerWidth/2,my=innerHeight/2,cx=mx,cy=my;
   addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;dot.style.transform=`translate(${mx}px,${my}px)`;
     const t=e.target;
-    const onFog=t.id==='fog';
-    cur.classList.toggle('wipe',onFog);
-    cur.classList.remove('hide'); dot.classList.toggle('hide',onFog);
-    cur.classList.toggle('big',!onFog && !!(t.closest&&t.closest('a,button,.opt,input,select')));
+    const onFog=t.id==='fog', st=t.closest&&t.closest('#stage'), onLens=!!(st&&st.classList.contains('mode-lens')), onScan=!!(st&&!onLens);
+    cur.classList.toggle('wipe',onFog);cur.classList.toggle('drag',onScan);
+    curTxt.textContent=onScan?'DRAG':'WIPE';
+    cur.classList.toggle('hide',onLens); dot.classList.toggle('hide',onLens||onFog||onScan);
+    cur.classList.toggle('big',!onFog && !onScan && !!(t.closest&&t.closest('a,button,.opt,input,select')));
   },{passive:true});
   (function loop(){cx=lerp(cx,mx,.18);cy=lerp(cy,my,.18);cur.style.transform=`translate(${cx}px,${cy}px)`;requestAnimationFrame(loop)})();
   document.addEventListener('pointerleave',()=>{cur.classList.add('hide');dot.classList.add('hide')});
@@ -1268,6 +1406,135 @@ document.querySelectorAll('[data-count]').forEach(el=>{
   new IntersectionObserver((es,o)=>{if(!es[0].isIntersecting)return;o.disconnect();const t0=performance.now();
     (function s(t){const p=clamp((t-t0)/1200,0,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(s)})(t0);}).observe(el);
 });
+
+/* ---------- transformation lens ---------- */
+const CLIENTS=[
+ {id:2,name:'Rohan K.',prog:'Body recomposition',weeks:24,quote:'Visible six-pack abs and shredded core. Sanjeev completely transformed my body composition.',stats:[['Weight',85,73,'kg'],['Waist',94,76,'cm'],['Body fat',24,9,'%']]},
+ {id:1,name:'Aditya R.',prog:'Bodybuilding & hypertrophy',weeks:20,quote:'The scale barely moved, but my shoulders and chest filled out completely. Real muscle without the fluff.',stats:[['Weight',62,68,'kg'],['Bench',45,85,'kg'],['Body fat',16,11,'%']]},
+ {id:4,name:'Harpreet S.',prog:'Bodybuilding',weeks:28,quote:'He fixed my form first and added weight later. That order changed everything.',stats:[['Weight',86,79,'kg'],['Body fat',27,13,'%'],['Arms',34,39,'cm']]},
+ {id:6,name:'Neha P.',prog:'Weight loss',weeks:20,quote:'I came in scared of weights. Now the squat rack is my favourite part of the gym.',stats:[['Weight',68,58,'kg'],['Waist',84,70,'cm'],['Squat',0,55,'kg']]},
+ {id:7,name:'Simran A.',prog:'Strength & toning',weeks:16,quote:'Sixteen weeks of home sessions, and my whole posture is different.',stats:[['Weight',66,59,'kg'],['Push-ups',2,20,''],['Squat',20,60,'kg']]},
+];
+(function(){
+  const stage=$('#stage'),lens=$('#lens'),lensImg=$('#imgAfterLens'),label=$('#lensLabel');
+  const imgB=$('#imgBefore'),imgAS=$('#imgAfterScan');
+  const scanline=$('#scanline'),scanWeek=$('#scanWeek'),tagL=$('#tagL');
+  const range=$('#scanRange'),scanCtl=$('#scanCtl'),lensSize=$('#lensSize'),help=$('#stageHelp');
+  let mode='scan', cur=CLIENTS[0], scanP=0, scanSeen=false;
+  let R=0.24; // radius as fraction of width
+  let tx=.5,ty=.42,x=.5,y=.42,vx=0,vy=0,r=0,rt=0,hold=false,active=false,lastMove=0,holdTimer=null;
+
+  // thumbs
+  const th=$('#thumbs');
+  CLIENTS.forEach((c,i)=>{
+    const b=document.createElement('button');b.type='button';b.className='thumb';b.setAttribute('aria-pressed',i===0);
+    const d=c.stats[0];const ch=d[2]-d[1];
+    b.innerHTML=`<div class="im"><img src="assets/tf${c.id}b.webp" alt="" loading="lazy"><img src="assets/tf${c.id}a.webp" alt="" loading="lazy"></div><span>${c.name.split(' ')[0]} · ${ch>0?'+':'−'}${Math.abs(ch)}${d[3]}</span>`;
+    b.setAttribute('aria-label',`${c.name}, ${c.prog}`);
+    b.addEventListener('click',()=>{th.querySelectorAll('.thumb').forEach(t=>t.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');setClient(c)});
+    th.appendChild(b);
+    new Image().src=`assets/tf${c.id}a.webp`;
+  });
+
+  function fmt(v,unit){const s=Math.round(v);return `${s}<small>${unit}</small>`}
+  function renderStats(p){
+    const box=$('#cStats');
+    box.innerHTML=cur.stats.map(([k,a,b,u])=>{
+      const v=lerp(a,b,p);const d=Math.round(v-a);
+      return `<div class="stat"><div class="k">${k}</div><div class="v">${fmt(v,u)}</div><div class="d">${d===0?'start':(d>0?'+':'−')+Math.abs(d)+(u&&u.length<4?' '+u:'')}</div></div>`;
+    }).join('');
+  }
+  function setClient(c){
+    cur=c;
+    stage.style.opacity='.4';
+    const pb=`assets/tf${c.id}b.webp`, pa=`assets/tf${c.id}a.webp`;
+    const im=new Image();im.onload=()=>{imgB.src=pb;imgAS.src=pa;lensImg.src=pa;stage.style.opacity='1';};im.src=pa;
+    $('#cName').textContent=c.name;$('#cProg').textContent=c.prog;$('#cWeeks').textContent=c.weeks;$('#cQuote').textContent=c.quote;
+    if(mode==='scan'){setScan(0);if(scanSeen)playScan()}else renderStats(1);
+  }
+  stage.style.transition='opacity .35s';
+
+  function setMode(m,auto=true){
+    mode=m;stage.classList.toggle('mode-lens',m==='lens');stage.classList.toggle('mode-scan',m==='scan');
+    $('#mLens').setAttribute('aria-pressed',m==='lens');$('#mScan').setAttribute('aria-pressed',m==='scan');
+    scanCtl.hidden=m!=='scan';lensSize.hidden=m!=='lens';
+    help.textContent=m==='lens'?'Drag the lens · hold to reveal all':'Drag the silver line up or down';help.style.opacity=1;
+    tagL.textContent='BEFORE';
+    if(m==='scan'){setScan(0);if(auto)playScan()}else{stopScan();renderStats(1)}
+  }
+  $('#mLens').onclick=()=>setMode('lens');$('#mScan').onclick=()=>setMode('scan');
+  $('#lensMinus').onclick=()=>{R=clamp(R-.04,.12,.4)};$('#lensPlus').onclick=()=>{R=clamp(R+.04,.12,.4)};
+  stage.addEventListener('wheel',e=>{if(mode!=='lens')return;e.preventDefault();R=clamp(R-e.deltaY*.0004,.12,.4)},{passive:false});
+
+  function rel(e){const b=stage.getBoundingClientRect();return [(e.clientX-b.left)/b.width,(e.clientY-b.top)/b.height]}
+  stage.addEventListener('pointermove',e=>{
+    const [px,py]=rel(e);
+    if(mode==='lens'){tx=px;ty=py;active=true;lastMove=performance.now();help.style.opacity=0}
+    else if(dragging){setScan(clamp(py,0,1));stopScan()}
+  });
+  let dragging=false;
+  stage.addEventListener('pointerdown',e=>{
+    stage.setPointerCapture(e.pointerId);
+    const [px,py]=rel(e);
+    if(mode==='lens'){tx=px;ty=py;active=true;lastMove=performance.now();help.style.opacity=0;
+      holdTimer=setTimeout(()=>{hold=true},280);}
+    else{dragging=true;stage.classList.add('dragging');help.style.opacity=0;stopScan();setScan(clamp(py,0,1))}
+  });
+  const up=()=>{clearTimeout(holdTimer);hold=false;dragging=false;stage.classList.remove('dragging')};
+  stage.addEventListener('pointerup',up);stage.addEventListener('pointercancel',up);
+  stage.addEventListener('pointerleave',()=>{active=false;up()});
+  stage.addEventListener('dblclick',()=>{hold=!hold});
+
+  // scan
+  let scanAnim=null;
+  function setScan(p){
+    scanP=p;const pct=(p*100).toFixed(2)+'%';
+    imgAS.style.clipPath=`inset(0 0 ${(100-p*100).toFixed(2)}% 0)`;
+    scanline.style.transform=`translateY(${p*stage.clientHeight}px)`;
+    const wk=Math.round(p*cur.weeks);scanWeek.textContent='WEEK '+wk;
+    range.value=Math.round(p*100);range.style.setProperty('--p',pct);
+    renderStats(p);
+  }
+  function playScan(){
+    stopScan();if(reduce){setScan(1);return}
+    const from=scanP>=.99?0:scanP,t0=performance.now(),dur=3200*(1-from);
+    const ic=$('#playIcon');ic.setAttribute('d','M7 5h4v14H7zM13 5h4v14h-4z');
+    scanAnim=requestAnimationFrame(function s(t){const p=clamp(from+(t-t0)/3200,0,1);setScan(p);if(p<1)scanAnim=requestAnimationFrame(s);else stopScan()});
+  }
+  function stopScan(){if(scanAnim)cancelAnimationFrame(scanAnim);scanAnim=null;$('#playIcon').setAttribute('d','M7 4v16l13-8Z')}
+  $('#scanPlay').onclick=()=>{scanAnim?stopScan():playScan()};
+  range.addEventListener('input',()=>{stopScan();setScan(range.value/100)});
+
+  // lens loop
+  let sw=0,sh=0;
+  function measure(){const b=stage.getBoundingClientRect();sw=b.width;sh=b.height;lensImg.style.width=sw+'px';lensImg.style.height=sh+'px';if(mode==='scan')setScan(scanP)}
+  new ResizeObserver(measure).observe(stage);
+  let stageVisible=true;new IntersectionObserver(es=>{stageVisible=es[0].isIntersecting}).observe(stage);
+  const MAG=1.1;
+  function loop(t){
+    if(mode==='lens' && stageVisible && sw){
+      if(!active || t-lastMove>2600){ // idle drift
+        if(!active){tx=.5+Math.sin(t/1700)*.24;ty=.42+Math.sin(t/1100)*.18;}
+      }
+      const k=reduce?1:.16;
+      const nx=lerp(x,tx,k),ny=lerp(y,ty,k);vx=nx-x;vy=ny-y;x=nx;y=ny;
+      rt=hold?Math.hypot(sw,sh)/sw*1.05:R;
+      r=lerp(r||R,rt,hold?.12:.18);
+      const d=r*2*sw, cxp=x*sw, cyp=y*sh;
+      // liquid squash from velocity
+      const sp=Math.min(Math.hypot(vx*sw,vy*sh)/40,.18), ang=Math.atan2(vy,vx);
+      lens.style.setProperty('--d',d+'px');
+      lens.style.transform=`translate(${cxp-d/2}px,${cyp-d/2}px) rotate(${ang}rad) scale(${1+sp},${1-sp*.7}) rotate(${-ang}rad)`;
+      // image inside lens: aligned to stage, magnified around the lens centre
+      lensImg.style.transform=`translate(${d/2-cxp*MAG}px,${d/2-cyp*MAG}px) scale(${MAG})`;
+      label.style.transform=`translate(${cxp-26}px,${cyp+d/2+10}px)`;
+      label.style.opacity=hold?0:1;
+    }
+    requestAnimationFrame(loop);
+  }
+  setClient(CLIENTS[0]);setMode('scan',false);requestAnimationFrame(loop);
+  new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){scanSeen=true;o.disconnect();if(mode==='scan')setTimeout(playScan,500)}},{threshold:.5}).observe(stage);
+})();
 
 /* ---------- programs index ---------- */
 const PROGRAMS=[
